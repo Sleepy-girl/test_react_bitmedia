@@ -57,12 +57,16 @@ function MainPage() {
       </section>
       <section className="footer">
         <form>
-          <input type="text" placeholder="Enter your email" />
-          <button>Subscribe</button>
+          <label>
+            <input type="text" placeholder="Enter your email" />
+            <button className="btnFooter">Subscribe</button>
+          </label>
         </form>
-        <span>AppCo</span>
-        <span>All rights reserved by ThemeTags</span>
-        <span>Copyrights © 2019.</span>
+        <div className="wrapperFooter">
+          <span className="logoFooter">AppCo</span>
+          <span className="copyright">All rights reserved by ThemeTags</span>
+          <span className="copyright">Copyrights © 2019.</span>
+        </div>
       </section>
     </MainPageStyles>
   );

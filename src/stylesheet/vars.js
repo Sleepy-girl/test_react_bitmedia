@@ -3,6 +3,7 @@ export const colors = {
   textWhite: "rgb(255,255,255)",
   textTitle: "rgb(26,26,26)",
   textContent: "rgb(126,126,126)",
+  placeholder: "rgb(185,185,185)",
 };
 
 export const gradient = {

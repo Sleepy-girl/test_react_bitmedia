@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { colors, gradient } from "../stylesheet/vars";
 import backgroundHeader from "../assets/images/header.svg";
+import backgroundFooter from "../assets/images/footer.svg";
 import design from "../assets/images/design.svg";
 
 export const MainPageStyles = styled.div`
@@ -16,7 +17,7 @@ export const MainPageStyles = styled.div`
     width: 100vw;
     min-height: 655px;
     background-image: url(${backgroundHeader});
-    background-size: 655px;
+    /* background-size: 655px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -91,13 +92,10 @@ export const MainPageStyles = styled.div`
   li::before {
     display: block;
     content: "";
-    /* position: absolute; */
-    /* left: 0;
-    top: 0; */
     width: 106px;
     height: 96px;
     background-repeat: no-repeat;
-    /* background-position: center; */
+    background-position: center;
     margin: 0 auto;
     text-align: center;
     margin-bottom: 16px;
@@ -133,5 +131,56 @@ export const MainPageStyles = styled.div`
     line-height: 142%;
     text-align: center;
     color: ${colors.textContent};
+  }
+
+  .footer {
+    width: 100vw;
+    min-height: 184px;
+    background-image: url(${backgroundFooter});
+    /* background-size: 655px; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 26px;
+  }
+  form {
+    text-align: center;
+  }
+  label {
+    position: relative;
+  }
+  input {
+    width: 579px;
+    height: 64px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px;
+    padding: 19px;
+    margin-bottom: 32px;
+  }
+  input::placeholder {
+    font-size: 16px;
+    line-height: 26px;
+    color: ${colors.placeholder};
+  }
+  .btnFooter {
+    position: absolute;
+    width: 176px;
+    height: 56px;
+    top: -18px;
+    right: 4px;
+    color: ${colors.textWhite};
+    background: ${colors.main};
+    border-radius: 8px;
+  }
+  .wrapperFooter {
+    display: flex;
+    justify-content: space-between;
+    color: ${colors.textWhite};
+  }
+  .logoFooter {
+    font-size: 32px;
+  }
+  .copyright {
+    font-size: 16px;
   }
 `;
