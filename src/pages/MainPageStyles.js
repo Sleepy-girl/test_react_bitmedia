@@ -1,8 +1,10 @@
 import styled from "styled-components";
-import { colors, gradient } from "../stylesheet/vars";
+import { colors, shadow } from "../stylesheet/vars";
 import backgroundHeader from "../assets/images/header.svg";
 import backgroundFooter from "../assets/images/footer.svg";
 import design from "../assets/images/design.svg";
+import data from "../assets/images/data.svg";
+import retina from "../assets/images/retina.svg";
 
 export const MainPageStyles = styled.div`
   section {
@@ -24,9 +26,6 @@ export const MainPageStyles = styled.div`
     margin-bottom: 16px;
   }
   h1 {
-    font-size: 40px;
-    line-height: 49px;
-    color: ${colors.textWhite};
     margin-bottom: 48px;
   }
   h2 {
@@ -51,6 +50,10 @@ export const MainPageStyles = styled.div`
     color: ${colors.main};
     background: ${colors.textWhite};
     border-radius: 8px;
+  }
+  .btnStats:hover,
+  .btnStats:focus {
+    background: ${colors.hoverBtnStats};
   }
   .mobile {
     position: absolute;
@@ -98,23 +101,26 @@ export const MainPageStyles = styled.div`
     background-position: center;
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 16px;
+    margin-bottom: 40px;
   }
   li {
     width: 380px;
     height: 323px;
-    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    box-shadow: ${shadow.main};
     border-radius: 32px;
     padding: 48px 32px;
+  }
+  li:hover {
+    box-shadow: ${shadow.hover};
   }
   .iconDesign::before {
     background-image: url(${design});
   }
   .iconData::before {
-    background-image: url(${design});
+    background-image: url(${data});
   }
   .iconRetina::before {
-    background-image: url(${design});
+    background-image: url(${retina});
   }
   .listTitle {
     display: block;
@@ -137,7 +143,6 @@ export const MainPageStyles = styled.div`
     width: 100vw;
     min-height: 184px;
     background-image: url(${backgroundFooter});
-    /* background-size: 655px; */
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -152,7 +157,7 @@ export const MainPageStyles = styled.div`
   input {
     width: 579px;
     height: 64px;
-    border: 1px solid #f1f1f1;
+    border: 1px solid ${colors.input};
     border-radius: 10px;
     padding: 19px;
     margin-bottom: 32px;
@@ -162,7 +167,7 @@ export const MainPageStyles = styled.div`
     line-height: 26px;
     color: ${colors.placeholder};
   }
-  .btnFooter {
+  .btnSubscribe {
     position: absolute;
     width: 176px;
     height: 56px;
@@ -171,6 +176,10 @@ export const MainPageStyles = styled.div`
     color: ${colors.textWhite};
     background: ${colors.main};
     border-radius: 8px;
+  }
+  .btnSubscribe:hover,
+  .btnSubscribe:focus {
+    background: ${colors.btnHoverFooter};
   }
   .wrapperFooter {
     display: flex;

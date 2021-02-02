@@ -64,7 +64,8 @@ button:focus {
 }
 
 .logo {
-  font-family: Montserrat;
+  font-size: 40px;
   font-weight: 400;
+  line-height: 49px;
   color: white;
 }

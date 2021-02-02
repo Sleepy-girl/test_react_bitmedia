@@ -4,7 +4,7 @@ import { HeaderStyles } from "./HeaderStyles";
 function Header() {
   return (
     <HeaderStyles>
-      <h1>AppCo</h1>
+      <h1 className="logo">AppCo</h1>
     </HeaderStyles>
   );
 }

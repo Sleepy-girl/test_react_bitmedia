@@ -58,8 +58,8 @@ function MainPage() {
       <section className="footer">
         <form>
           <label>
-            <input type="text" placeholder="Enter your email" />
-            <button className="btnFooter">Subscribe</button>
+            <input type="email" placeholder="Enter your email" />
+            <button className="btnSubscribe">Subscribe</button>
           </label>
         </form>
         <div className="wrapperFooter">
