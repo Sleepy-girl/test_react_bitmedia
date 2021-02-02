@@ -96,4 +96,20 @@ export const MainPageStyles = styled.div`
     border-radius: 32px;
     padding: 48px 32px;
   }
+  span {
+    display: block;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: ${colors.textTitle};
+    margin-bottom: 16px;
+  }
+  p {
+    width: 316px;
+    font-size: 16px;
+    line-height: 142%;
+    text-align: center;
+    color: ${colors.textContent};
+  }
 `;
