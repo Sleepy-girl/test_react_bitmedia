@@ -1,21 +1,36 @@
 import React from "react";
 import { MainPageStyles } from "./MainPageStyles";
+import mobile from "../assets/images/mobile.svg";
 
 function MainPage() {
   return (
     <MainPageStyles>
       <section className="header">
-        <h1 className="logo">AppCo</h1>
-        <h2>Brainstorming for desired perfect Usability</h2>
-        <span>
-          Our design projects are fresh and simple and will benefit your
-          business greatly. Learn more about our work!
-        </span>
-        <button>Views Stats</button>
+        <div className="wrapper">
+          {/* ${backgroundHeader} */}
+          <h1 className="logo">AppCo</h1>
+          <h2>
+            Brainstorming
+            <span className="title"> for desired perfect Usability</span>
+          </h2>
+          <span className="desribtion">
+            Our design projects are fresh and simple and will benefit your
+            business greatly. Learn more about our work!
+          </span>
+          <button className="btnStats">Views Stats</button>
+        </div>
+        <div className="mobile">
+          <img src={mobile} alt="iPhoneX" height="561" />
+        </div>
       </section>
+
       <section className="content">
-        <h3>Why small business owners love AppCo?</h3>
-        <span>
+        <h3>
+          <span className="contentTitle">Why </span>
+          small business owners love
+          <span className="contentTitle"> AppCo?</span>
+        </h3>
+        <span className="contentDescribtion">
           Our design projects are fresh and simple and will benefit your
           business greatly. Learn more about our work!
         </span>
