@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { colors, gradient } from "../stylesheet/vars";
 import backgroundHeader from "../assets/images/header.svg";
-import mobile from "../assets/images/mobile.svg";
+import design from "../assets/images/design.svg";
 
 export const MainPageStyles = styled.div`
   section {
@@ -29,7 +29,6 @@ export const MainPageStyles = styled.div`
     margin-bottom: 48px;
   }
   h2 {
-    /* font-weight: 400; */
     font-size: 48px;
     line-height: 59px;
     color: ${colors.textWhite};
@@ -89,6 +88,20 @@ export const MainPageStyles = styled.div`
 
     margin-bottom: 128px;
   }
+  li::before {
+    display: block;
+    content: "";
+    /* position: absolute; */
+    /* left: 0;
+    top: 0; */
+    width: 106px;
+    height: 96px;
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 16px;
+  }
   li {
     width: 380px;
     height: 323px;
@@ -96,7 +109,16 @@ export const MainPageStyles = styled.div`
     border-radius: 32px;
     padding: 48px 32px;
   }
-  span {
+  .iconDesign::before {
+    background-image: url(${design});
+  }
+  .iconData::before {
+    background-image: url(${design});
+  }
+  .iconRetina::before {
+    background-image: url(${design});
+  }
+  .listTitle {
     display: block;
     font-weight: 600;
     font-size: 24px;
@@ -105,7 +127,7 @@ export const MainPageStyles = styled.div`
     color: ${colors.textTitle};
     margin-bottom: 16px;
   }
-  p {
+  .listDescription {
     width: 316px;
     font-size: 16px;
     line-height: 142%;

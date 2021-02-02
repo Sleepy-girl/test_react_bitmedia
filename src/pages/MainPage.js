@@ -7,7 +7,6 @@ function MainPage() {
     <MainPageStyles>
       <section className="header">
         <div className="wrapper">
-          {/* ${backgroundHeader} */}
           <h1 className="logo">AppCo</h1>
           <h2>
             Brainstorming
@@ -35,17 +34,21 @@ function MainPage() {
           business greatly. Learn more about our work!
         </span>
         <ul>
-          <li>
-            <span>Clean Design</span>
-            <p>Increase sales by showing true dynamics of your website.</p>
+          <li className="iconDesign">
+            <span className="listTitle">Clean Design</span>
+            <p className="listDescription">
+              Increase sales by showing true dynamics of your website.
+            </p>
           </li>
-          <li>
-            <span>Secure Data</span>
-            <p>Build your online store’s trust using Social Proof & Urgency.</p>
+          <li className="iconData">
+            <span className="listTitle">Secure Data</span>
+            <p className="listDescription">
+              Build your online store’s trust using Social Proof & Urgency.
+            </p>
           </li>
-          <li>
-            <span>Retina Ready</span>
-            <p>
+          <li className="iconRetina">
+            <span className="listTitle">Retina Ready</span>
+            <p className="listDescription">
               Realize importance of social proof in customer’s purchase
               decision.
             </p>
